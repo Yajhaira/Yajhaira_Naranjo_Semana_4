@@ -48,11 +48,11 @@ const tareas = [
 let dato;
 let c = '';
 
-allTaskListNav.forEach(element => {
+tareas.forEach(element => {
     c += `<li class = "todas">${element.nombre}</li>`;
 });
 
-allTaskList.innerHTML = `<ul>
+todas.innerHTML = `<ul>
 ${c}
 </ul>`;
 
@@ -69,7 +69,7 @@ for(let i = 0; i < listaElementos.length; i++) {
             listaElementos[i].className = "pendientes"
             dato = listaElementos[i].innerHTML;
         }
-        allTaskList.forEach(element => {
+        todas.forEach(element => {
             if (dato === element.nombre){
                 element.estado = !element.estado
             }
