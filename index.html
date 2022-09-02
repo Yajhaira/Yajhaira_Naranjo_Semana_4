@@ -4,10 +4,47 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>To-Do list</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Edu+SA+Beginner&family=Pangolin&display=swap" rel="stylesheet">
 </head>
 <body>
+    <header>
+        <h1>Lista de tareas</h1>
+    </header>
+    <main>
+        <section class="todas">
+            <article >
+                <h2>Todas las tareas</h2>
+                <ul id="all">
+                    <li>Sacar las perritas</li>
+                    <li>Preparar clase de la electiva</li>
+                    <li>Tarea de web</li>
+                    <li>Comprar alimentos de la semana</li>
+                    <li>Sacar dinero</li>
+                    <li>Pagar plan de datos</li>
+                    <li>Hacer envío de dinero</li>
+                    <li>Presentación de arte y tecnología</li>
+                    <li>Lectura de electiva</li>
+                </ul>
+            </article>
+        </section>
+        <div>
+            <section class="pendientes">
+                <h2>Tareas pendientes</h2>
+                <ul id="pending"></ul>
+            </section>
+            <section class="completadas">
+                <h2>Tareas completadas</h2>
+                <ul id="completed"></ul>
+            </section>
+        </div>
+    </main>
     
+    <script src="./script.js"></script>
+
 </body>
-<script src="./script.js"></script>
+
 </html>

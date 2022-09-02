@@ -1,0 +1,71 @@
+*{
+    margin: 0px;
+    padding: 0%;
+}
+
+body{
+    background-color: rgb(216, 245, 220);
+
+}
+
+h1{
+    font-family: 'Pangolin', cursive;
+    font-size: 400;
+    color: rgb(44, 71, 10);
+}
+
+h2{
+    font-family: 'Edu SA Beginner', cursive;
+    font-size: 100;
+    color:rgb(76, 105, 38);
+    margin-top: 20px;
+}
+
+header{
+    width: 100%;
+    height: 180px;
+    background-color: rgb(109, 170, 34);
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+}
+
+.todas{
+    background-color: rgb(180, 208, 147);
+    margin:10px 5px 10px 10px;
+    padding:0%;
+    width: 80%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+}
+
+div{
+    width: 100%;
+}
+
+.pendientes{
+    background-color: rgb(180, 208, 147);
+    margin: 10px 10px 5px 5px;
+    padding:0%;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+}
+
+.completadas{
+    background-color: rgb(180, 208, 147);
+    margin: 10px 10px 10px 5px;
+    padding:0%;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+}
+
