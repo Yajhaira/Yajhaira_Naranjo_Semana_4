@@ -69,3 +69,10 @@ div{
     justify-content: center;
 }
 
+.checked {
+    text-decoration: line-through;
+}
+
+.unchecked {
+    color: blueviolet;
+}
