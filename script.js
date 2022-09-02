@@ -49,34 +49,34 @@ let dato;
 let c = '';
 
 tareas.forEach(element => {
-    c += `<li class = "todas">${element.nombre}</li>`;
+    c += `<li class = "elementos faltan">${element.nombre}</li>`;
 });
 
 todas.innerHTML = `<ul>
 ${c}
 </ul>`;
 
-const listaElementos = document.getElementsByClassName('todas');
+const listaElementos = document.getElementsByClassName('elementos');
 
 for(let i = 0; i < listaElementos.length; i++) {
     listaElementos[i].addEventListener("click", () => {
         pendientes = [];
         completadas = [];
-        if (listaElementos[i].className === "pendientes") {
-            listaElementos[i].className = "completadas"
+        if (listaElementos[i].className === "elementos faltan") {
+            listaElementos[i].className = "elementos hechos"
             dato = listaElementos[i].innerHTML;
         } else {
-            listaElementos[i].className = "pendientes"
+            listaElementos[i].className = "elementos faltan"
             dato = listaElementos[i].innerHTML;
         }
-        todas.forEach(element => {
+        tareas.forEach(element => {
             if (dato === element.nombre){
                 element.estado = !element.estado
             }
             if(!element.estado){
                 pendientes.push(element);
             } else {
-                completados.push(element);
+                completadas.push(element);
             }
         })
 
@@ -90,11 +90,11 @@ function pintarListas() {
     let pintarPendientes = '';
 
     pendientes.forEach(element => {
-        pintarPendientes += `<li class = "pendientes">${element.nombre}</li>`
+        pintarPendientes += `<li class = "elementos faltan">${element.nombre}</li>`
     });
 
     completadas.forEach(element => {
-        pintarCompletadas += `<li class = "completadas">${element.nombre}</li>`
+        pintarCompletadas += `<li class = "elementos hechos">${element.nombre}</li>`
     });
 
     listaCompletadas.innerHTML = `<ul>
