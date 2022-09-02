@@ -79,7 +79,31 @@ for(let i = 0; i < listaElementos.length; i++) {
                 completados.push(element);
             }
         })
+
+        pintarListas();
     })
+}
+
+function pintarListas() {
+
+    let pintarCompletadas = '';
+    let pintarPendientes = '';
+
+    pendientes.forEach(element => {
+        pintarPendientes += `<li class = "pendientes">${element.nombre}</li>`
+    });
+
+    completadas.forEach(element => {
+        pintarCompletadas += `<li class = "completadas">${element.nombre}</li>`
+    });
+
+    listaCompletadas.innerHTML = `<ul>
+    ${pintarCompletadas}
+    </ul>`;
+
+    listaPendientes.innerHTML = `<ul>
+    ${pintarPendientes}
+    </ul>`;
 }
 
 
